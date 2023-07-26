@@ -1,47 +1,117 @@
-# Microfrontends Project
+###################################
+# Microfrontend Project
 
-This project is a collection of 5 microfrontend applications:
+This repository contains a main application and four microfrontend applications that can be run independently. Each microfrontend can be started using 'npm run start'. Additionally, each microfrontend has a sandbox environment that can be launched using 'npm run sandbox'.
 
-* `main`: The main application.
-* `grid`: A grid microfrontend.
-* `text`: A text microfrontend.
-* `pic`: A picture microfrontend.
-* `list`: A list microfrontend.
+## Main Application (main)
 
-## Getting Started
+The main application is the core of the project and integrates the microfrontends into a single application. To start the main application in development mode, use:
 
-To install the project, run the following command:
-
-npm install
-
-
-To start the main application, run the following command:
-
+```bash
 npm run dev
+```
+
+This will run the main application and load the microfrontends to form a cohesive user interface.
+
+## Microfrontends
+
+The project includes the following microfrontend applications:
+
+### Grid Microfrontend (grid)
+
+The grid microfrontend is responsible for displaying data in a grid layout.
+
+Before running the microfrontend, navigate to the 'grid' directory and install the required dependencies using:
+
+```bash
+cd grid
+npm install
+```
 
 
-To start a specific microfrontend, run the following command:
+To start the grid microfrontend in development mode, use:
 
+```bash
 npm run start
+```
+To launch the sandbox environment for the grid microfrontend, use:
 
-
-For example, to start the grid microfrontend, run the following command:
-
-npm run start grid
-
-
-To start a microfrontend in a developer environment, run the following command:
-
+```bash
 npm run sandbox
+```
+
+### Text Microfrontend (text)
+
+The text microfrontend handles the rendering of text content.
+
+Before running the microfrontend, navigate to the 'text' directory and install the required dependencies using:
+
+```bash
+cd text
+npm install
+```
 
 
-Documentation
-The documentation for the project can be found in the docs directory.
+To start the text microfrontend in development mode, use:
 
-Contributing
-Contributions to the project are welcome. Please open a pull request if you have any changes or improvements.
+```bash
+npm run start
+```
+To launch the sandbox environment for the text microfrontend, use:
 
-License
-The project is licensed under the MIT License.
+```bash
+npm run sandbox
+```
+### Pic Microfrontend (pic)
 
-I hope this is what you are looking for. Let me know if you have any other questions.
+The pic microfrontend deals with displaying images.
+
+Before running the microfrontend, navigate to the 'pic' directory and install the required dependencies using:
+
+```bash
+cd pic
+npm install
+```
+
+
+To start the pic microfrontend in development mode, use:
+
+```bash
+npm run start
+```
+
+To launch the sandbox environment for the pic microfrontend, use:
+
+```bash
+npm run sandbox
+```
+
+### List Microfrontend (list)
+
+The list microfrontend handles displaying data in a list format.
+
+Before running the microfrontend, navigate to the 'list' directory and install the required dependencies using:
+
+```bash
+cd list
+npm install
+```
+
+
+To start the list microfrontend in development mode, use:
+
+```bash
+npm run start
+```
+
+To launch the sandbox environment for the list microfrontend, use:
+
+```bash
+npm run sandbox
+```
+## Technology Stack
+
+- Webpack - All the micro frontend applications in this project are vanilla JavaScript (VanillaJS) applications bundled using Webpack.
+
+
+- Vite VanillaJS - only for the main application.

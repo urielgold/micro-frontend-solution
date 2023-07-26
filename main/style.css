@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 0.5;
+}
+
+#root {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100vh;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(128, 149, 109);
+}
+
+.grid-container {
+  padding: 40px;
+  min-height: 0;
+  display: grid;
+  grid-gap: 10px;
+  flex: 1;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mf-wrapper {
+  position: relative;
+  overflow: auto;
+  background: rgba(211, 204, 196, 40%);
+  color: black;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.grid-container:has(.mf-wrapper:hover) .mf-wrapper:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.grid-container:has(.mf-wrapper:hover) .mf-wrapper {
+  transform: scale(0.9);
+  opacity: 0.6;
+}

@@ -1,0 +1,14 @@
+.mf-list {
+
+}
+
+ul {
+    list-style-type: "*";
+    color: blue;
+}
+li {
+    padding-left: 20px;
+    text-align: left;
+    color: black;
+    font-family: Sans Serif, serif;
+}
