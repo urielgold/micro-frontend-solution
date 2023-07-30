@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack serve --open",
+    "start": "webpack serve",
+    "start-all": "webpack serve &",
     "sandbox": "webpack serve --open --config webpack.sandbox.config.js"
   },
   "keywords": [],
@@ -22,8 +23,5 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-middleware": "^6.1.1",
     "webpack-dev-server": "^4.15.1"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "name": "mfa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "npm run start",
+    "start": "npm run start-all --workspaces",
+    "kill": "killall node -9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urielgold/micro-frontend-solution.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urielgold/micro-frontend-solution/issues"
+  },
+  "homepage": "https://github.com/urielgold/micro-frontend-solution#readme",
+  "workspaces": ["/*"]
+}
